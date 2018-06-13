@@ -1,0 +1,62 @@
+//拥抱Placeholder,与Mixins不同，%placeholder也可以多次使用，而且不会生成重复的代码。这使得输入的CSS更友好，更干净
+
+%bg-image {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+%btn {
+  padding: 10px;
+  color:#fff;
+  curser: pointer;
+  border: none;
+  shadow: none;
+  font-size: 14px;
+  width: 150px;
+  margin: 5px 0;
+  text-align: center;
+  display: block;
+}
+
+//定位上下左右居中
+%center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//定位上下居中
+%center-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//定位左右居中
+%center-horizon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+%ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+%left{
+  float: left;
+}
+
+%right{
+  float: right;
+}
+
+%hide{
+  display: none;
+}
+
+%show{
+  display: block;
+}
